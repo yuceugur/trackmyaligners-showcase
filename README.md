@@ -92,11 +92,9 @@ All three could start at $0, so money wasn't the constraint. Time was.
 
 ```mermaid
 flowchart LR
-    A[onboarding_started] --> B[onboarding_step_completed] --> C[onboarding_completed] --> D[timer_started]
-    D --> E[timer_stopped] --> F[calendar_viewed / insights_viewed]
-    F --> G[paywall_viewed] --> H[paywall_plan_selected] --> I[purchase_started] --> J[purchase_completed]
-    G --> K[paywall_skipped]
-    I --> L[purchase_failed / purchase_cancelled]
+    A[Onboarding] --> B[First timer] --> C[Daily habit] --> D[Paywall seen]
+    D --> E[Purchase]
+    D --> F[Skipped]
 ```
 
 | Question | Where I look |
